@@ -1,0 +1,10 @@
+<ion-content padding class="content" (click)="lightStatus()">
+  <div class="light">
+    <img [src]="icon_light">
+    <span>点击屏幕开启手电</span>
+    <div class="status">
+      <div class="off"><img src="./assets/icon_light/off.png" *ngIf="status.off"></div>
+      <div class="on"><img src="./assets/icon_light/on.png" *ngIf="status.on"></div>
+    </div>
+  </div>
+</ion-content>
